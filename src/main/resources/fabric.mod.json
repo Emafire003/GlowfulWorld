@@ -1,36 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "glowful_world",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Glowful World",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "Emafire003"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Emafire003/ColoredGlowLib",
+    "sources": "https://github.com/Emafire003/ColoredGlowLib",
+    "issues": "https://github.com/Emafire003/ColoredGlowLib/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "license": "GNU GPL3",
+  "icon": "assets/glowful_world/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "me.emafire003.dev.glowful_world.GlowfulWorld"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "glowful_world.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.13.3",
+    "minecraft": ["1.18.x", "1.17.x"],
+    "java": ">=16",
     "fabric": "*",
-    "minecraft": "1.18.x",
-    "java": ">=17"
+    "coloredglowlib": "*"
   },
   "suggests": {
     "another-mod": "*"
