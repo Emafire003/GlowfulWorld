@@ -4,6 +4,7 @@
   "package": "me.emafire003.dev.glowful_world.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
+    "BrewingRecipeRegistryInvoker"
   ],
   "client": [
 

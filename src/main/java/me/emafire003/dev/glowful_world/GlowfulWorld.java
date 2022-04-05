@@ -1,11 +1,9 @@
 package me.emafire003.dev.glowful_world;
 
 import me.emafire003.dev.coloredglowlib.ColoredGlowLib;
-import me.emafire003.dev.coloredglowlib.client.ColoredGlowLibClient;
 import me.emafire003.dev.coloredglowlib.util.Color;
+import me.emafire003.dev.glowful_world.items.GlowPotionItem;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.EntityType;
 import org.slf4j.Logger;
@@ -23,6 +21,7 @@ public class GlowfulWorld implements ModInitializer {
 		FabricLoader.getInstance().isModLoaded("coloredglowlib");
 
 		setColorsToMobs();
+		GlowPotionItem.registerPotionItems();
 	}
 
 	public static void setColorsToMobs(){
