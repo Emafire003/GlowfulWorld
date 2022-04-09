@@ -4,17 +4,17 @@
   "version": "${version}",
 
   "name": "Glowful World",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This mod adds a unique glow color to (almost) every type of entity on Minecraft! And also shows how to use ColoredGlowLib ",
   "authors": [
     "Emafire003"
   ],
   "contact": {
-    "homepage": "https://github.com/Emafire003/ColoredGlowLib",
-    "sources": "https://github.com/Emafire003/ColoredGlowLib",
-    "issues": "https://github.com/Emafire003/ColoredGlowLib/issues"
+    "homepage": "https://github.com/Emafire003/GlowfulWorld",
+    "sources": "https://github.com/Emafire003/GlowfulWorld",
+    "issues": "https://github.com/Emafire003/GlowfulWorld/issues"
   },
 
-  "license": "GNU GPL3",
+  "license": "GNU LGPL3",
   "icon": "assets/glowful_world/icon.png",
 
   "environment": "*",
@@ -29,7 +29,7 @@
 
   "depends": {
     "fabricloader": ">=0.13.3",
-    "minecraft": ["1.18.x", "1.17.x"],
+    "minecraft": ">=1.17-",
     "java": ">=16",
     "fabric": "*",
     "coloredglowlib": "*"

@@ -23,10 +23,6 @@ repositories {
 			includeGroup "maven.modrinth"
 		}
 	}
-	/*maven {
-		name "Siphalor's Maven"
-		url "https://maven.siphalor.de"
-	}*/
 
 }
 
@@ -42,6 +38,7 @@ dependencies {
 	//ColoredGlowLib
 	modImplementation "maven.modrinth:coloredglowlib:${project.coloredglowlib_version}"
 	include "maven.modrinth:coloredglowlib:${project.coloredglowlib_version}"
+
 }
 
 processResources {
