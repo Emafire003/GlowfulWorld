@@ -4,7 +4,50 @@ Well, the world these days is a bit black and white, isn't it? Why not make it g
 This mod helps you with that, it makes (almost) every entity have a unique color for the glowing effect, the one
 from spectral arrows. (also, don't you have the feeling that shulkers should make you glow too for some reason?)
 
-I wanted to write more, but that's relly it. Here, have some images to show you better (skip to the ![Installation](https://github.com/Emafire003/GlowfulWorld/#Installation) and ![Coming Features](https://github.com/Emafire003/GlowfulWorld/#coming-features)):
+### The potion
+It also adds a new potion, the **Glowing Potion**. You can craft it like any other potion, the ingridient is the **Glow Berry**. It also has all of the other version of potions, and craftable in the same way, so to have the splash potion you use gunpowder, to have the longer one redstone ecc...
+
+![crafting](https://user-images.githubusercontent.com/29462910/162566746-adba123e-6c20-4251-a2ae-e41f4176502f.png)
+(If this feature is enabled the mod will need to be on the client too)
+
+
+### The config file
+You can also set a few things in the config file, located in `config/glowful_world`.
+In the file `glowful_world_config.properties` you can choose to enable or disable some features, like the Glowing Potion, and the shulkers setting you glowing.
+
+Instead, in the `glowful_world_entities_color.json` file, you can set/change the color of entities. If you want to change the color of an entity already present in the config, (look [here](https://gist.github.com/Emafire003/a9c8399009e9eff354eb2a31254990a2) for the list, updated to 9/04/2022), search for it and change the hex value associeted with it. 
+
+For example, let's say we want to change the color of the cat to "ff00ff". You would need to search in the file (suggestion: use ctrl+f and type the word "cat") and edit the line as it follows:
+```json
+{"minecraft:something":"#color"}
+{"minecraft:cat":"#9ef3e7"}
+{"minecraft:something":"#color"}
+```
+
+New:
+```json
+{"minecraft:something":"#color"}
+{"minecraft:cat":"ff00ff"}
+{"minecraft:something":"#color"}
+```
+
+**WARNING: DO NOT PUT MORE THAT ONE THING ONE ONE LINE! ONLY ONE OBJECT PER LINE IS SUPPORTED.**
+
+
+If you would like to have a new entity added to the list, for example `"minecraft:chest_minecart"` (yes apparently minecarts glow too if summond with the {Glowing:1} tag), you simply need to add a new line with a new object like the ones before it, so:
+
+```json
+{"minecraft:something":"#color"}
+{"minecraft:chest_minecart":"#9ef3e7"}
+```
+
+**WARNING: DO NOT PUT MORE THAT ONE THING ONE ONE LINE! ONLY ONE OBJECT PER LINE IS SUPPORTED.**
+
+To update the configs in-game, simply use the command `/updategwconfigs`
+
+### Some images
+
+Here, have some images to show you better (skip to the ![Installation](https://github.com/Emafire003/GlowfulWorld/#Installation) and ![Coming Features](https://github.com/Emafire003/GlowfulWorld/#coming-features)):
 
 
 ![sauna](https://user-images.githubusercontent.com/29462910/161439079-34e7bfe9-4817-45e2-8e5d-f32020eb901c.jpg)
