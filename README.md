@@ -75,9 +75,8 @@ Here, have some images to show you better (skip to the ![Installation](https://g
 ## Installation
 Just drop it inside your mods/ folder along with ColoredGlowLib and Fabric API
 
-Anyway, this is a simple mod, literally just has one class, made to provide an example of the ColoredGlowLib library.
+Anyway, this is a simple mod, made to provide an example of the ColoredGlowLib library.
 
 ## Coming features
-- Glowness potion (crafted from glowberries) (compatibility with other mods that may add the same thing)
-- User configurable colors
 - Shulkers that make you glow? I dunno it makes sense in my head ¯\_(ツ)_/¯
+- Suggestions acceppted!
