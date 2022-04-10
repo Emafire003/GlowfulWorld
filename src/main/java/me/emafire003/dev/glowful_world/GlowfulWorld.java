@@ -7,9 +7,9 @@ import me.emafire003.dev.glowful_world.config.DataSaver;
 import me.emafire003.dev.glowful_world.config.GWConfig;
 import me.emafire003.dev.glowful_world.items.GlowPotionItem;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.projectile.ShulkerBulletEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,6 +42,11 @@ public class GlowfulWorld implements ModInitializer {
 			GlowPotionItem.registerPotionItems();
 		}
 		GWCommandRegister.registerCommands();
+		if(GWConfig.ALL_GLOW){
+			ServerEntityEvents.ENTITY_LOAD.register((entity, world) -> {
+				entity.setGlowing(true);
+			});
+		}
 	}
 
 	public static HashMap<String, String> getMap(){
