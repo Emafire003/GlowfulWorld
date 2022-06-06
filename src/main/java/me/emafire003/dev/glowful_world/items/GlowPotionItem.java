@@ -1,13 +1,12 @@
 package me.emafire003.dev.glowful_world.items;
 
 import me.emafire003.dev.glowful_world.GlowfulWorld;
-import me.emafire003.dev.glowful_world.mixin.BrewingRecipeRegistryInvoker;
+import me.emafire003.dev.potionrecipes.BrewingRecipeRegister;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.Potions;
-import net.minecraft.recipe.BrewingRecipeRegistry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -28,9 +27,9 @@ public class GlowPotionItem {
     }
 
     public static void registerPotionRecipes(){
-        BrewingRecipeRegistryInvoker.registerPotionRecipe(Potions.AWKWARD, Items.GLOW_BERRIES, GlowPotionItem.GLOWING);
-        BrewingRecipeRegistryInvoker.registerPotionRecipe(GlowPotionItem.GLOWING, Items.REDSTONE, GlowPotionItem.LONG_GLOWING);
-        BrewingRecipeRegistryInvoker.registerPotionRecipe(GlowPotionItem.GLOWING, Items.GLOWSTONE_DUST, GlowPotionItem.STRONG_GLOWING);
+        BrewingRecipeRegister.registerPotionRecipe(Potions.AWKWARD, Items.GLOW_BERRIES, GlowPotionItem.GLOWING);
+        BrewingRecipeRegister.registerPotionRecipe(GlowPotionItem.GLOWING, Items.REDSTONE, GlowPotionItem.LONG_GLOWING);
+        BrewingRecipeRegister.registerPotionRecipe(GlowPotionItem.GLOWING, Items.GLOWSTONE_DUST, GlowPotionItem.STRONG_GLOWING);
     }
 
 }
