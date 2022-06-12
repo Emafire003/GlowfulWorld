@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.11-SNAPSHOT'
+	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -37,7 +37,7 @@ dependencies {
 
 	//ColoredGlowLib
 	modImplementation "maven.modrinth:coloredglowlib:${project.coloredglowlib_version}"
-	include "maven.modrinth:coloredglowlib:${project.coloredglowlib_version}"
+	//include "maven.modrinth:coloredglowlib:${project.coloredglowlib_version}"
 
 	//BrewingRecipe
 	modImplementation "maven.modrinth:potionrecipelib:${project.potionrecipelib_version}"

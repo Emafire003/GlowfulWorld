@@ -1,7 +1,6 @@
 package me.emafire003.dev.glowful_world.commands;
 
-import net.fabricmc.fabric.api.command.v1.CommandRegistrationCallback;
-import net.minecraft.server.command.KillCommand;
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 
 import static me.emafire003.dev.coloredglowlib.ColoredGlowLib.LOGGER;
 

@@ -129,6 +129,11 @@ public class GlowfulWorld implements ModInitializer {
 		entities_colors.put(EntityType.WOLF, new Color(136, 157, 167).toHEX());
 		entities_colors.put(EntityType.ZOGLIN, new Color(149, 180, 142).toHEX());
 		entities_colors.put(EntityType.ZOMBIFIED_PIGLIN, new Color(103, 139, 102).toHEX());
+		entities_colors.put(EntityType.ALLAY, "#18cbbc");
+		entities_colors.put(EntityType.FROG, "#bcd41f");
+		entities_colors.put(EntityType.TADPOLE, "#90620c");
+		entities_colors.put(EntityType.WARDEN, "#0e261f");
+
 
 
         //Rainbows
